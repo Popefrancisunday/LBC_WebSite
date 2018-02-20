@@ -15,7 +15,7 @@ namespace LBC_WebSite.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Light Bearer's Community ESUT.";
 
             return View();
         }
@@ -24,6 +24,16 @@ namespace LBC_WebSite.Controllers
         {
             ViewBag.Message = "Your contact page.";
 
+            return View();
+        }
+        public ActionResult Campus()
+        {
+            ViewBag.Message = "Various Campuses.";
+            return View();
+        }
+        public ActionResult Ministry()
+        {
+            ViewBag.Message = "Ministries in LBC.";
             return View();
         }
     }
