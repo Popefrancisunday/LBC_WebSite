@@ -15,26 +15,39 @@ namespace LBC_WebSite.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Light Bearer's Community ESUT.";
-
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
-
             return View();
         }
         public ActionResult Campus()
         {
-            ViewBag.Message = "Various Campuses.";
             return View();
         }
-        public ActionResult Ministry()
+        public ActionResult EvangelicalMinistry()
         {
-            ViewBag.Message = "Ministries in LBC.";
             return View();
         }
+        public ActionResult PrayingMinistry()
+        {
+            return View();
+        }
+        public ActionResult Worship()
+        {
+            return View();
+        }
+        public ActionResult StewardMinistry()
+        {
+            return View();
+        }
+        public ActionResult Chaplaincy()
+        {
+            ViewBag.Message = "St. Abert De Great Chaplaincy";
+            return View();
+
+        }
+
     }
 }

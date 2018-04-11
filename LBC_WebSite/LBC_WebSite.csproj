@@ -177,6 +177,20 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\background.jpg" />
+    <Content Include="Content\Images\Backup_of_ccrnlogo2.jpg" />
+    <Content Include="Content\Images\CCRN logo.jpg" />
+    <Content Include="Content\Images\ccrn-logo.png" />
+    <Content Include="Content\Images\images %282%29.jpg" />
+    <Content Include="Content\Images\images %283%29.jpg" />
+    <Content Include="Content\Images\images7.jpg" />
+    <Content Include="Content\Images\jesus.jpg" />
+    <Content Include="Content\Images\learning.jpg" />
+    <Content Include="Content\Images\music.jpg" />
+    <Content Include="Content\Images\Praise.jpg" />
+    <Content Include="Content\Images\st.Albert.jpg" />
+    <Content Include="Content\Images\the form of a servant.jpg" />
+    <Content Include="Content\Images\Trinity.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -230,10 +244,14 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\Campus.cshtml" />
+    <Content Include="Views\Home\EvangelicalMinistry.cshtml" />
+    <Content Include="Views\Home\PrayingMinistry.cshtml" />
+    <Content Include="Views\Home\Worship.cshtml" />
+    <Content Include="Views\Home\StewardMinistry.cshtml" />
+    <Content Include="Views\Home\Chaplaincy.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Libecafe\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

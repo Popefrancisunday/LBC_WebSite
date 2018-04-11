@@ -3,13 +3,16 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - Light Bearer's Community</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
-<body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+<body >
+    <div id="logo">
+        <img class="img-responsive" src="~/Content/Images/Backup_of_ccrnlogo2.jpg" style="width:100%;height:200px" />
+    </div>
+    <div class="navbar navbar-inverse " >
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -17,13 +20,29 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Light Bearer's Community", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+        
+                @Html.ActionLink("Light Bearer's Community","Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
+            <div class="navbar-collapse collapse" >
+                <ul class="nav navbar-nav" style="margin:0px">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Campus", "Campus", "Home")</li>
-                    <li>@Html.ActionLink("Ministry", "Ministry", "Home")</li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle" role="button" aria-expanded="false" >Campus<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Enugu Campus</a></li>
+                            <li><a href="#">Parklane</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle" role="button" aria-expanded="false">Ministry<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="~/Home/EvangelicalMinistry">Evangelical Ministry</a></li>
+                            <li><a href="~/Home/Worship">Praise &amp; Worship</a></li>
+                            <li><a href="~/Home/StewardMinistry">Steward Ministy</a></li>
+                            <li><a href="~/Home/PrayingMinistry">Praying Ministry</a></li>
+                        </ul>
+                    </li>
+                    <li>@Html.ActionLink("Chaplaincy", "Chaplaincy", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                 </ul>
@@ -32,13 +51,15 @@
         </div>
     </div>
     <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year -Light Bearer's Community ESUT.<br/>All Rights Reserved.</p>
-        </footer>
+        <div id="wrapper" style="border:10px">
+            @RenderBody()
+            <hr />
+            <footer style="background:#1faece;color:white;width:auto;height:40px;padding:30px">
+                <p>&copy; @DateTime.Now.Year - Light Bearer's Community ESUT. &nbsp;&nbsp;&nbsp;&nbsp;All Rights Reserved.</p>
+            </footer>
+        </div>
     </div>
-
+     
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
